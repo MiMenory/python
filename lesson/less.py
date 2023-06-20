@@ -111,10 +111,13 @@
 # Output: 2
 
 
-
-
-
-
+# days = int(input('Введите кол-во дней: '))
+# count_temp = 0
+# for i in range(days):
+#     temp = int(input('Какая сегодня была температура?: '))
+#     if temp > 0:
+#         count_temp += 1
+# print(f"Кол-во дней с плюсовой температурой {count_temp}")
 
 
 
@@ -136,3 +139,14 @@
 
 
 
+
+# water_melon = int(input('Сколько арбузов на прилавке?: '))
+# min_weight = 10000
+# max_weight = 0
+# for i in range(water_melon):
+#     weight_water_melon = int(input('Какой вес данного арбуза?: '))
+#     if max_weight < weight_water_melon:
+#         max_weight = weight_water_melon
+#     if min_weight > weight_water_melon:
+#         min_weight = weight_water_melon
+# print(max_weight, min_weight)
