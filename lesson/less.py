@@ -14,6 +14,23 @@
 # Примечание: Пользователь может вводить значения
 # списка или список задан изначально.
 
+number_value = []
+value = 8
+count = 0
+end_value = 0
+for i in range(value):
+    numb = int(input('Какую цифру вводим?: '))
+    number_value.append(numb)
+print(number_value)
+
+for j in range(value):
+    if number_value[j] != number_value[count-1]:
+        end_value = count
+        count += 1
+print(f" = {end_value}")
+
+
+
 
 
 
@@ -27,6 +44,9 @@
 # Output: [4, 5, 1, 2, 3]
 # Примечание: Пользователь может вводить значения
 # списка или список задан изначально.
+
+
+
 
 
 
