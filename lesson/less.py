@@ -69,11 +69,16 @@ else:
 # 3 2 1 -> no
 
 #  Размеры
-n = int(input('длинна: '))
-m = int(input('ширина: '))
-segment = int(input('Сколько долек вы хотите отлимить?: '))
+# n = int(input('длинна: '))
+# m = int(input('ширина: '))
+# segment = int(input('Сколько долек вы хотите отлимить?: '))
 
-if (segment < n*m and segment % 2 == 0):
-    print('ok')
-else:
-    print('not')
+# if (segment < n*m and segment % 2 == 0):
+#     print('ok')
+# else:
+#     print('not')
+
+
+# if k % m == 0 or k % n == 0
+
+
