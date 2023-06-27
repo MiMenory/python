@@ -7,7 +7,21 @@
 # 5 -> 1 2 3 4 5
 # 3 -> 1
 
+count_number = int(input('Ввыедите размер массива: '))
+list_number = []
+count = 1
+for i in range(count_number):
+    list_number.append(count)
+    count += 1
+print(list_number)
 
+find_number = int(input('Какую цифру ищем?: '))
+numb = 0
+for j in range(count_number):
+    if list_number[j] == find_number:
+        numb += 1
+        break
+print(f"Число {find_number} встречается {numb} раз")
 
 
 
@@ -23,7 +37,23 @@
 # 5 -> 1 2 3 4 5
 # 6 -> 5
 
+count_number = int(input('Ввыедите размер массива: '))
+list_number = []
+count = 1
+for i in range(count_number):
+    list_number.append(count)
+    count += 1
+print(list_number)
 
+find_number = int(input('Какое число ищите?: '))
+max_number = 0
+if find_number > count_number:
+    find_number = count_number
+
+for j in range(find_number):
+    if list_number[j] > max_number:
+        max_number = list_number[j]
+print(max_number)
 
 
 
@@ -52,7 +82,27 @@
 # английские, либо только русские буквы.
 
 # Пример: 
-# Ввод:
-# ноутбук
-# Вывод:
-# 12
+# Ввод: ноутбук
+# Вывод: 12
+
+
+# Заводим словарь. Ключ это баллы. 
+list_word = {1:"AEIOULNSTRАВЕИНОРСТ",
+                2:"DGДКЛМПУ",
+                3:"BCMPБГЁЬЯ",
+                4:"FHVWYЙЫ",
+                5:"KЖЗХЦЧ",
+                8:"JXШЭЮ",
+                10:"QZФЩЪ"}
+
+
+# Приводим все значения в верхний регистр, чтобы исключить опечатки пользователя.
+word = input("Введите слово: ").upper()
+
+# цикл
+summ = 0
+for i in word:
+    for k, v in list_word.items():
+        if i in v:
+            summ += k
+print(f"Стоимость слова: {summ}")
