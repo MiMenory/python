@@ -20,7 +20,7 @@ numb = 0
 for j in range(count_number):
     if list_number[j] == find_number:
         numb += 1
-        break
+        # break
 print(f"Число {find_number} встречается {numb} раз")
 
 
