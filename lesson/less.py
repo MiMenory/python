@@ -37,7 +37,13 @@ for j in range(len(num1)):
             num1[j], num1[index] = num1[index], num1[j]
 print(num1)
 
-
+for j in range(len(num2)):
+    inx = j
+    for l in range(j + 1, len(num2)):
+        if num2[l] < num2[inx]:
+            index = l
+            num2[j], num2[index] = num2[index], num2[j]
+print(num2)
 
 
 
