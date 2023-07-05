@@ -10,7 +10,7 @@
 count_number = int(input('Ввыедите размер массива: '))
 list_number = []
 count = 1
-for i in range(count_number):
+for _ in range(count_number):
     list_number.append(count)
     count += 1
 print(list_number)
