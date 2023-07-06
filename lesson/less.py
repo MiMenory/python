@@ -8,8 +8,16 @@
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
 
+def func(a, b):
+    a1 = a
+    for _ in range(b-1):
+        a = a * a1
+    return a
 
+a = int(input('Введите число: '))
+b = int(input('В какую степень возводим?: '))
 
+print(func(a, b))
 
 
 
@@ -21,3 +29,4 @@
 
 # 2 2
 # 4
+
