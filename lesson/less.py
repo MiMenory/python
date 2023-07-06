@@ -8,13 +8,18 @@
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
 
-# def fact(a, b):
-#     a1 = a
-#     for _ in range(b-1):
-#         a = a * a1
-#     return a
 
 
+
+# способ без рекурсии
+
+def fact(a, b):
+    a1 = a
+    for _ in range(b-1):
+        a = a * a1
+    return a
+
+# 
 
 
 def fact(a, b):
