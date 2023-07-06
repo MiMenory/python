@@ -68,22 +68,22 @@
 # Output: 21
 # Задание необходимо решать через рекурсию
 
-# def fib(n):
-#     if n < 2:
-#         return n
-#     else:
-#         return fib(n - 1) + fib(n - 2)
+def fib(n):
+    if n < 2:
+        return n
+    else:
+        return fib(n - 1) + fib(n - 2)
 
-# a = [0,1]
+a = [0,1]
 
-# for i in range(50):
-#     print(i, fib(i))
-# fib(5)
+for i in range(50):
+    print(i, fib(i))
+fib(5)
  
-# a = [0, 1]
-# for i in range(50):
-#     a.append(a[-1] + a[-2])
-#     print(i, a[-1])
+a = [0, 1]
+for i in range(50):
+    a.append(a[-1] + a[-2])
+    print(i, a[-1])
 
 
 
@@ -95,16 +95,16 @@
 # Input: 5 -> 1 3 3 3 4
 # Output: 1 3 3 3 1
 
-# list = [1, 3, 3, 3, 4, 4]
-# min_lst = min(list)
-# max_lst = max(list)
-# new_lst = []
-# for i in list:
-#     if i == max_lst:
-#         new_lst.append(min_lst)
-#     else:
-#         new_lst.append(i)
-# print(new_lst)
+list = [1, 3, 3, 3, 4, 4]
+min_lst = min(list)
+max_lst = max(list)
+new_lst = []
+for i in list:
+    if i == max_lst:
+        new_lst.append(min_lst)
+    else:
+        new_lst.append(i)
+print(new_lst)
 
 
 
