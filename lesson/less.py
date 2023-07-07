@@ -18,7 +18,7 @@ def arithmetic_progression(a1, d, n):
     for i in range(1, n+1):
         summa = a1 + (i - 1) * d
         array.append(summa)
-        print(array)
+    return array
 
 
 print(arithmetic_progression(a1, d, n))
