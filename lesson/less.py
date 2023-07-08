@@ -11,7 +11,7 @@
 
 
 
-# from random import randint
+from random import randint
 
 
 # Даны два массива чисел. Требуется вывести те элементы
@@ -31,32 +31,32 @@
 
 # (каждое число вводится с новой строки)
 
-# a = int(input('Кол-во элементов 1 массива: '))
-# c = []
-# one_list = [i for i in range(a)]
-# for i in one_list:
-#     b = randint(1, 10)
-#     c.append(b)
-#     if i == a:
-#         break
+a = int(input('Кол-во элементов 1 массива: '))
+c = []
+one_list = [i for i in range(a)]
+for i in one_list:
+    b = randint(1, 10)
+    c.append(b)
+    if i == a:
+        break
 
-# a1 = int(input('Кол-во элементов 2 массива: '))
-# c1 = []
-# one_list1 = [i for i in range(a1)]
-# for i in one_list1:
-#     b1 = randint(1, 10)
-#     c1.append(b1)
-#     if i == a1:
-#         break
+a1 = int(input('Кол-во элементов 2 массива: '))
+c1 = []
+one_list1 = [i for i in range(a1)]
+for i in one_list1:
+    b1 = randint(1, 10)
+    c1.append(b1)
+    if i == a1:
+        break
 
-# print(f"Первый список: {c}")
-# print(f"Второй список: {c1}")
+print(f"Первый список: {c}")
+print(f"Второй список: {c1}")
 
-# c3 = []
-# for i in range(len(c)):
-#     if c[i] not in c1:
-#         c3.append(c[i])
-# print(c3)
+c3 = []
+for i in range(len(c)):
+    if c[i] not in c1:
+        c3.append(c[i])
+print(c3)
 
 
 # Задача №41. Решение в группах
@@ -75,13 +75,13 @@
 # 0            2
 
 
-# list = [1, 5, 1, 5, 1]
-# k = 0
-# numb = int(input('Введиче число: '))
-# for i in range(1, len(list) - 1):
-#     if list[i - 1] < list[i] > list[i + 1]:
-#         k += 1
-#         print(k)
+list = [1, 5, 1, 5, 1]
+k = 0
+numb = int(input('Введиче число: '))
+for i in range(1, len(list) - 1):
+    if list[i - 1] < list[i] > list[i + 1]:
+        k += 1
+        print(k)
 
 
 
@@ -100,14 +100,14 @@
 # 1 2 3 2 3           2
 
 
-# list = [1, 3, 3, 3, 3]
-# list_copy = list[:]
-# count = 0
-# a = int(input('Имещ пару: '))
-# for i in range(len(list)):
-#     if a == list[i]:
-#         count += 1
-# print(count)
+list = [1, 3, 3, 3, 3]
+list_copy = list[:]
+count = 0
+a = int(input('Имещ пару: '))
+for i in range(len(list)):
+    if a == list[i]:
+        count += 1
+print(count)
 
 
 # Задача №45. Решение в группах
@@ -123,13 +123,13 @@
 # 300                     220 284
 
 
-# def summ_del(number):
-#     summa = 1
-#     for i in range(2, number //  2 + 1):
-#         if number % i == 0:
-#             summa += i
-#     return summa
+def summ_del(number):
+    summa = 1
+    for i in range(2, number //  2 + 1):
+        if number % i == 0:
+            summa += i
+    return summa
     
-# k = 300
-# for i in range(k):
-#     print(i, summ_del(i))
+k = 300
+for i in range(k):
+    print(i, summ_del(i))
