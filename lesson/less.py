@@ -16,15 +16,14 @@
 # копией values.
 
 
-# Ввод:
-# values = [1, 23, 42, ‘asdfg’]
+# Ввод: 
+
+# values = [1, 23, 42, 'asdfg']
 # transformed_values = list(map(trasformation, values))
 # if values == transformed_values:
-# print(‘ok’)
+#   print('ok')
 # else:
-# print(‘fail’)
-# Вывод:
-# ok
+#   print('fail')
 
 
 
@@ -73,8 +72,6 @@
 
 
 
-
-
 # Задача №51. Решение в группах
 # Напишите функцию same_by(characteristic, objects), которая
 # проверяет, все ли объекты имеют одинаковое значение
@@ -84,12 +81,14 @@
 # должна возвращать True. Аргумент characteristic - это
 # функция, которая принимает объект и вычисляет его
 # характеристику.
-# Ввод: Вывод:
-# values = [0, 2, 10, 6] same
+
+
+# Ввод:                                     Вывод:
+# values = [0, 2, 10, 6]                    same
 # if same_by(lambda x: x % 2, values):
-# print(‘same’)
+#   print(‘same’)
 # else:
-# print(‘different’)
+#   print(‘different’)
       
 
 
