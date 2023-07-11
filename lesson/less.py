@@ -16,6 +16,41 @@
 # Вывод:** Парам пам-пам  
 
 
+def check_rhythm(poem):
+    lines = poem.split(" ")
+    syllables = []
+    
+    for line in lines:
+        words = line.split("-")
+        syllables.append(sum([count_vowels(word) for word in words]))
+    
+    if len(set(syllables)) == 1:
+        return "Парам пам-пам"
+    else:
+        return "Пам парам"
+
+def count_vowels(word):
+    vowels = "aeiouаеёиоуыэюя"
+    count = 0
+    
+    for char in word:
+        if char.lower() in vowels:
+            count += 1
+    
+    return count
+
+poem = input("Введите стихотворение Винни-Пуха: ")
+result = check_rhythm(poem)
+
+print(result)
+
+# Пример использования:
+
+# Введите стихотворение Винни-Пуха: У лукоморья дуб зеленый
+# Парам пам-пам
+
+# Введите стихотворение Винни-Пуха: Чтоб не было так грустно душе
+# Пам парам
 
 
 
@@ -24,7 +59,13 @@
 
 
 
-# Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), которая принимает в качестве аргумента функцию, вычисляющую элемент по номеру строки и столбца. Аргументы num_rows и num_columns указывают число строк и столбцов таблицы, которые должны быть распечатаны. Нумерация строк и столбцов идет с единицы (подумайте, почему не с нуля). Примечание: бинарной операцией называется любая операция, у которой ровно два аргумента, как, например, у операции умножения.
+
+# Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), 
+# которая принимает в качестве аргумента функцию, вычисляющую элемент по номеру строки и столбца. 
+# Аргументы num_rows и num_columns указывают число строк и столбцов таблицы, которые должны быть распечатаны. 
+# Нумерация строк и столбцов идет с единицы (подумайте, почему не с нуля). 
+# Примечание: бинарной операцией называется любая операция, у которой ровно два аргумента, 
+# как, например, у операции умножения.
 
 # *Пример:*
 
@@ -38,3 +79,24 @@
 # 4 8 12 16 20 24
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
+
+
+def print_operation_table(operation, num_rows=6, num_columns=6):
+    table = "|   |"
+    for j in range(1, num_columns+1):
+        table += f" {j} |"
+    table += "\n|---|" + "---|" * num_columns + "\n"
+
+    for i in range(1, num_rows+1):
+        table += f"| {i} |"
+        for j in range(1, num_columns+1):
+            table += f" {operation(i, j)} |"
+        table += "\n"
+
+    print(table)
+
+def multiplication_table(x, y):
+    return x*y
+
+print_operation_table(multiplication_table)
+
